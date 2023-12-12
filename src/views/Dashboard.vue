@@ -132,6 +132,7 @@ export default {
     return {
       stats: {
         drowsy: {
+          cardColor: "bg-yellow",
           title: "Drowsy Count",
           value: "2",
           iconClass: "mdi mdi-sleep",

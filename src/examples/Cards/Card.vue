@@ -1,11 +1,11 @@
 <template>
   <div class="mb-4 card">
-    <div class="p-3 card-body">
+    <div class="p-3 card-body" :class="cardColor">
       <div class="d-flex" :class="directionReverse ? reverseDirection : ''">
         <div>
           <div class="text-center icon icon-shape"
            :class="`${iconBackground} ${this.$store.state.isRTL ? 'border-radius-md' : 'border-radius-2xl'}`">
-            <i class="text-lg opacity-10" :class="iconClass" aria-hidden="true"></i>
+            <i class="text-3xl" :class="iconClass" aria-hidden="true"></i>
           </div>
         </div>
         <div :class="contentClass">
@@ -71,6 +71,9 @@ export default {
     contentClass: {
       type: String,
     },
+    cardColor: {
+      type: String,
+    }
   },
 };
 </script>
