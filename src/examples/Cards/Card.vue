@@ -1,10 +1,10 @@
 <template>
   <div class="mb-4 card">
-    <div class="p-3 card-body" :class="cardColor">
+    <div class="p-3 card-body">
       <div class="d-flex" :class="directionReverse ? reverseDirection : ''">
         <div>
           <div class="text-center icon icon-shape"
-           :class="`${iconBackground} ${this.$store.state.isRTL ? 'border-radius-md' : 'border-radius-2xl'}`">
+            :class="`${iconBackground} ${this.$store.state.isRTL ? 'border-radius-md' : 'border-radius-2xl'}`">
             <i class="text-3xl" :class="iconClass" aria-hidden="true"></i>
           </div>
         </div>
@@ -71,9 +71,6 @@ export default {
     contentClass: {
       type: String,
     },
-    cardColor: {
-      type: String,
-    }
   },
 };
 </script>

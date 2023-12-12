@@ -5,6 +5,7 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 col-12">
             <card
+              class="card-bg"
               :title="stats.drowsy.title"
               :value="stats.drowsy.value"
               :percentage="stats.drowsy.percentage"
@@ -132,7 +133,7 @@ export default {
     return {
       stats: {
         drowsy: {
-          cardColor: "bg-yellow",
+          cardColor: "card-bg",
           title: "Drowsy Count",
           value: "2",
           iconClass: "mdi mdi-sleep",
@@ -203,3 +204,10 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+$card-bg: orange;
+.card-bg {
+  background-color: $card-bg;
+}
+</style>
