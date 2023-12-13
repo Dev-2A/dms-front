@@ -10,7 +10,7 @@
         </div>
         <div :class="contentClass">
           <div class="numbers" v-if="this.$store.state.isRTL">
-            <p class="mb-0 text-sm text-uppercase font-weight-bold" :class="titleColor">{{ title }}</p>
+            <p class="mb-0 text-uppercase font-weight-bold title-text" :class="titleColor">{{ title }}</p>
             <h5 class="font-weight-bolder" :class="valueColor">{{ value }}
             <span class="text-sm"  :class="percentageColor">{{ percentage }}</span> 
             <span class="font-weight-light text-sm"> {{detail}}</span>
@@ -74,3 +74,9 @@ export default {
   },
 };
 </script>
+
+<style>
+p, .p {
+  font-size: "display-font-size-1";
+}
+</style>
