@@ -53,10 +53,9 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-7 mb-lg">
-            <!-- line chart -->
-            <div class="card z-index-2">
-            </div>
+          <!-- Video -->
+          <div class="col-12">
+            <video-card />
           </div>
         <div class="row mt-4">
           <div class="col-lg-7 mb-lg-0 mb-4">
@@ -79,6 +78,7 @@
 import Card from "@/examples/Cards/Card.vue";
 import AuthorsTable from "@/views/components/AuthorsTable.vue";
 import CategoriesCard from "@/views/components/CategoriesCard.vue";
+import VideoCard from "@/examples/Cards/VideoCard.vue";
 
 export default {
   name: "dashboard-default",
@@ -122,6 +122,7 @@ export default {
     Card,
     AuthorsTable,
     CategoriesCard,
+    VideoCard
 },
 };
 </script>
