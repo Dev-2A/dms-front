@@ -1,9 +1,6 @@
 <template>
   <nav
     class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl"
-    :class="
-      this.$store.state.isRTL ? 'top-0 position-sticky z-index-sticky' : ''
-    "
     v-bind="$attrs"
     id="navbarBlur"
     data-scroll="true"
@@ -13,7 +10,6 @@
 
       <div
         class="mt-2 collapse navbar-collapse mt-sm-0 me-md-0 me-sm-4"
-        :class="this.$store.state.isRTL ? 'px-0' : 'me-sm-4'"
         id="navbar"
       >
         <div
@@ -27,9 +23,7 @@
             <input
               type="text"
               class="form-control"
-              :placeholder="
-                this.$store.state.isRTL ? 'أكتب هنا...' : 'Type here...'
-              "
+              placeholder="Type here..."
             />
           </div>
         </div>
