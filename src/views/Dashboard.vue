@@ -56,13 +56,8 @@
           <div class="col-lg-7 mb-lg">
             <!-- line chart -->
             <div class="card z-index-2">
-              <gradient-line-chart />
             </div>
           </div>
-          <div class="col-lg-5">
-            <carousel />
-          </div>
-        </div>
         <div class="row mt-4">
           <div class="col-lg-7 mb-lg-0 mb-4">
             <div class="card">
@@ -75,16 +70,15 @@
             <categories-card />
           </div>
         </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script>
 import Card from "@/examples/Cards/Card.vue";
-import GradientLineChart from "@/examples/Charts/GradientLineChart.vue";
-import Carousel from "./components/Carousel.vue";
-import CategoriesCard from "./components/CategoriesCard.vue";
-import AuthorsTable from "./components/AuthorsTable.vue";
+import AuthorsTable from "@/views/components/AuthorsTable.vue";
+import CategoriesCard from "@/views/components/CategoriesCard.vue";
 
 export default {
   name: "dashboard-default",
@@ -126,10 +120,8 @@ export default {
   },
   components: {
     Card,
-    GradientLineChart,
-    Carousel,
+    AuthorsTable,
     CategoriesCard,
-    AuthorsTable
 },
 };
 </script>
