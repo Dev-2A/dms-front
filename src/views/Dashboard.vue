@@ -4,21 +4,19 @@
       <div class="col-lg-12">
         <div class="row">
           <div class="col-lg-3 col-md-6 col-12">
-            <card
-              style="
-                background-color: orange;
-              "
+            <card style="background-color: #F5F1D6;"
               :title="stats.drowsy.title"
               :value="stats.drowsy.value"
               :percentage="stats.drowsy.percentage"
               :iconClass="stats.drowsy.iconClass"
+              :percentageColor="stats.drowsy.percentageColor"
               :iconBackground="stats.drowsy.iconBackground"
               :detail="stats.drowsy.detail"
               directionReverse
             ></card>
           </div>
           <div class="col-lg-3 col-md-6 col-12">
-            <card
+            <card style="background-color: #F5F1D6;"
               :title="stats.Calling.title"
               :value="stats.Calling.value"
               :percentage="stats.Calling.percentage"
@@ -29,25 +27,25 @@
             ></card>
           </div>
           <div class="col-lg-3 col-md-6 col-12">
-            <card
-              :title="stats.clients.title"
-              :value="stats.clients.value"
-              :percentage="stats.clients.percentage"
-              :iconClass="stats.clients.iconClass"
-              :iconBackground="stats.clients.iconBackground"
-              :percentageColor="stats.clients.percentageColor"
-              :detail="stats.clients.detail"
+            <card style="background-color: #F5F1D6;"
+              :title="stats.Texting.title"
+              :value="stats.Texting.value"
+              :percentage="stats.Texting.percentage"
+              :iconClass="stats.Texting.iconClass"
+              :iconBackground="stats.Texting.iconBackground"
+              :percentageColor="stats.Texting.percentageColor"
+              :detail="stats.Texting.detail"
               directionReverse
             ></card>
           </div>
           <div class="col-lg-3 col-md-6 col-12">
-            <card
-              :title="stats.sales.title"
-              :value="stats.sales.value"
-              :percentage="stats.sales.percentage"
-              :iconClass="stats.sales.iconClass"
-              :iconBackground="stats.sales.iconBackground"
-              :detail="stats.sales.detail"
+            <card style="background-color: #F5F1D6;"
+              :title="stats.Smoking.title"
+              :value="stats.Smoking.value"
+              :percentage="stats.Smoking.percentage"
+              :iconClass="stats.Smoking.iconClass"
+              :iconBackground="stats.Smoking.iconBackground"
+              :detail="stats.Smoking.detail"
               directionReverse
             ></card>
           </div>
@@ -88,31 +86,36 @@ export default {
         drowsy: {
           title: "Drowsy Count",
           value: "2",
+          percentage: "2 counts",
           iconClass: "mdi mdi-sleep",
+          percentageColor: "text-danger",
           iconBackground: "bg-gradient-warning",
+          detail: "more than last month"
         },
         Calling: {
           title: "Phon Calling Count",
           value: "8",
+          percentage: "3 counts",
           iconClass: "mdi mdi-cellphone",
+          percentageColor: "text-info",
           iconBackground: "bg-gradient-success",
-          detail: "Total Count 19",
+          detail: "less than last month",
         },
-        clients: {
-          title: "New Clients",
-          value: "+3,462",
-          percentage: "-2%",
-          iconClass: "ni ni-paper-diploma",
+        Texting: {
+          title: "Phone Texting Count",
+          value: "9",
+          percentage: "6 counts",
+          iconClass: "mdi mdi-message",
           percentageColor: "text-danger",
           iconBackground: "bg-gradient-warning",
-          detail: "since last quarter",
+          detail: "more than last month",
         },
-        sales: {
-          title: "Sales",
-          value: "$103,430",
-          percentage: "+5%",
-          iconClass: "ni ni-cart",
-          iconBackground: "bg-gradient-warning",
+        Smoking: {
+          title: "Smoking Count",
+          value: "0",
+          percentage: "0 counts",
+          iconClass: "mdi mdi-smoking",
+          iconBackground: "bg-gray-500",
           detail: "than last month",
         },
       },
