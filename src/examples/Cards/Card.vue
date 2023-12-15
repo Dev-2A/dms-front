@@ -10,22 +10,22 @@
         </div>
         <div :class="contentClass">
           <div class="numbers" v-if="this.$store.state.isRTL">
-            <p class="mb-0 text-uppercase text-bolder text-black" :class="titleColor">{{ title }}</p>
-            <div class="container">
+            <p class="mb-2 text-uppercase text-bolder text-black" :class="titleColor">{{ title }}</p>
               <p :class="total" class="mb-0 text-black font-weight-light text-sm">{{ total }}</p>
               <h5 class="font-weight-bolder" :class="valueColor">{{ value }}</h5>
-            </div>
             <span class="text-sm"  :class="percentageColor">{{ percentage }}</span>
             <span class="font-weight-light text-sm">{{detail}}</span>
           </div>
           <div class="numbers" v-else>
-            <p class="mb-0 text-sm text-uppercase font-weight-bold" :class="titleColor">{{ title }}</p>
-            <div class="container">
-              <p :class="total" class="mb-0 text-black font-weight-light text-sm">{{ total }}</p>
-              <h5 class="font-weight-bolder" :class="valueColor">{{ value }}</h5>
+            <p class="titles mb-0 text-uppercase text-2xl font-weight-bolder">{{ title }}</p>
+            <div class="container p-0 mt-2">
+              <p :class="total" class="mb-0 pt-1 text-sm totalcolor">{{ total }}</p>
+              <h5 class="font-weight-bolder valuecolor">{{ value }}</h5>
             </div>
-            <span class="text-sm"  :class="percentageColor">{{ percentage }}</span> 
-            {{detail}}
+            <div class="container p-0">
+              <p :class="detail" class="mb-0 pt-1 text-sm">{{detail}}</p>
+              <span class="text-lg font-weight-bolder" :class="percentageColor">{{ percentage }}</span>
+            </div>
           </div>
         </div>
       </div>
@@ -54,14 +54,8 @@ export default {
       type: String,
       required: true,
     },
-    titleColor: {
-      type: String,
-    },
     value: {
       required: true,
-    },
-    valueColor: {
-      type: String,
     },
     percentage: String,
     iconClass: {
@@ -91,10 +85,30 @@ export default {
 .container p {
   margin-top: 2px;
   margin-right: 3px;
+  text-align: end;
+  font-weight: 600;
 }
 
 .container h5 {
   margin-top: 0;
   margin-left: 1px;
 }
+
+.numbers p {
+  font-size: 1.125rem;
+}
+
+.titles {
+  color: black;
+  font-size: larger;
+}
+
+.totalcolor {
+  color: #6c757d;
+}
+
+.valuecolor {
+  color: black;
+}
+
 </style>
