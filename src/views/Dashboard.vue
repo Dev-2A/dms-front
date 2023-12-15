@@ -6,6 +6,7 @@
           <div class="col-lg-3 col-md-6 col-12">
             <card style="background-color: #F5F1D6;"
               :title="stats.drowsy.title"
+              :total="stats.drowsy.total"
               :value="stats.drowsy.value"
               :percentage="stats.drowsy.percentage"
               :iconClass="stats.drowsy.iconClass"
@@ -53,7 +54,7 @@
         <div class="row">
           <!-- Video -->
           <div class="col-12">
-            <video-card />
+            <GradientLineChart/>
           </div>
         <div class="row mt-4">
           <div class="col-lg-7 mb-lg-0 mb-4">
@@ -76,7 +77,7 @@
 import Card from "@/examples/Cards/Card.vue";
 import AuthorsTable from "@/views/components/AuthorsTable.vue";
 import CategoriesCard from "@/views/components/CategoriesCard.vue";
-import VideoCard from "@/examples/Cards/VideoCard.vue";
+import GradientLineChart from "@/examples/Charts/GradientLineChart.vue";
 
 export default {
   name: "dashboard-default",
@@ -84,13 +85,14 @@ export default {
     return {
       stats: {
         drowsy: {
-          title: "Drowsy Count",
-          value: "2",
-          percentage: "2 counts",
+          title: "졸음",
+          total: "누적",
+          value: "13",
+          percentage: "1회 증가",
           iconClass: "mdi mdi-sleep",
           percentageColor: "text-danger",
           iconBackground: "bg-gradient-warning",
-          detail: "more than last month"
+          detail: "지난 달보다"
         },
         Calling: {
           title: "Phon Calling Count",
@@ -125,7 +127,7 @@ export default {
     Card,
     AuthorsTable,
     CategoriesCard,
-    VideoCard
+    GradientLineChart,
 },
 };
 </script>
