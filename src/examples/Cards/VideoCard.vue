@@ -12,7 +12,7 @@
                     class="card-video"
                     controls
                     :src="videoUrl"></video> -->
-        </div>
+            </div>
     </div>
 </template>
 

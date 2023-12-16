@@ -2,6 +2,7 @@
   <div class="py-4 container-fluid">
     <div class="row">
       <div class="col-lg-12">
+        <!-- Cards -->
         <div class="row">
           <div class="col-lg-3 col-md-6 col-12">
             <card style="background-color: #F5F1D6;"
@@ -55,11 +56,23 @@
             ></card>
           </div>
         </div>
+        <!-- Video -->
         <div class="row">
-          <!-- Video -->
+          <div class="col-12">
+            <video-card />
+          </div>
+        </div>
+          <!-- Charts -->
+        <div class="row">
           <div class="col-12">
             <GradientLineChart/>
           </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12">
+            <DefaultLineChart />
+          </div>
+        </div>
         <div class="row mt-4">
           <div class="col-lg-7 mb-lg-0 mb-4">
             <div class="card">
@@ -72,7 +85,6 @@
             <categories-card />
           </div>
         </div>
-        </div>
       </div>
     </div>
   </div>
@@ -82,6 +94,8 @@ import Card from "@/examples/Cards/Card.vue";
 import AuthorsTable from "@/views/components/AuthorsTable.vue";
 import CategoriesCard from "@/views/components/CategoriesCard.vue";
 import GradientLineChart from "@/examples/Charts/GradientLineChart.vue";
+import VideoCard from "@/examples/Cards/VideoCard.vue";
+import DefaultLineChart from "@/examples/Charts/DefaultLineChart.vue";
 
 export default {
   name: "dashboard-default",
@@ -135,6 +149,8 @@ export default {
     AuthorsTable,
     CategoriesCard,
     GradientLineChart,
+    DefaultLineChart,
+    VideoCard
 },
 };
 </script>

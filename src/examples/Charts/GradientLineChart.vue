@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card mb-4">
     <div class="pb-0 card-header mb-0">
       <h6>{{ title }}</h6>
       <p class="text-sm">
@@ -55,7 +55,7 @@ export default {
             tension: 0.4,
             borderWidth: 0,
             pointRadius: 0,
-            borderColor: "#4BB543 ",
+            borderColor: "#4BB543",
             backgroundColor: gradientStroke1,
             // eslint-disable-next-line no-dupe-keys
             borderWidth: 3,
