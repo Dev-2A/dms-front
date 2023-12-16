@@ -69,7 +69,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-3 col-md-6 col-12">
+          <div class="col-lg-8 col-12">
             <DefaultLineChart />
           </div>
         </div>
