@@ -5,7 +5,9 @@
         <div>
           <div class="text-center icon icon-shape"
             :class="`${iconBackground} ${this.$store.state.isRTL ? 'border-radius-md' : 'border-radius-2xl'}`">
-            <i class="text-3xl" :class="iconClass" aria-hidden="true"></i>
+              <div class="icon-image pt-2 align-self-center">
+                <img :src="`${iconImage}`" alt="icon Image" />
+              </div>
           </div>
         </div>
         <div :class="contentClass">
@@ -58,6 +60,7 @@ export default {
       required: true,
     },
     percentage: String,
+    iconImage: String,
     iconClass: {
       type: String,
       required: true,
@@ -109,6 +112,12 @@ export default {
 
 .valuecolor {
   color: black;
+}
+
+.icon-image img {
+  width: 32px;
+  height: 32px;
+  align-self: center;
 }
 
 </style>

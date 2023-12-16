@@ -25,7 +25,7 @@
           class="navbar-brand-img h-100"
           alt="main_logo"
         />
-        <span class="ms-2 text-lg font-weight-bold me-2">Team DMS Website</span>
+        <span class="ms-2 text-lg font-weight-bold me-2">Team DMS 홈페이지</span>
       </router-link>
     </div>
     <hr class="mt-0 horizontal dark" />

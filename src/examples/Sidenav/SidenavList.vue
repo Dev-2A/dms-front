@@ -8,10 +8,10 @@
         <sidenav-item
           url="/dashboard-default"
           :class="getRoute() === 'dashboard-default' ? 'active' : ''"
-          navText="DashBoard"
+          navText="대시보드"
         >
           <template v-slot:icon>
-            <i class="mdi mdi-car-emergency text-lg text-success"></i>
+            <img src="../../assets/png/car-emergency.png" alt="대시보드">
           </template>
         </sidenav-item>
       </li>
@@ -19,12 +19,10 @@
         <sidenav-item
           url="/tables"
           :class="getRoute() === 'tables' ? 'active' : ''"
-          navText="Shelter Information"
+          navText="월간 위험 행동 통계"
         >
           <template v-slot:icon>
-            <i
-              class="mdi mdi-coffee text-lg text-success"
-            ></i>
+            <img src="../../assets/png/chart-areaspline.png" alt="월간 위험 행동 통계"/>
           </template>
         </sidenav-item>
       </li>
@@ -42,18 +40,18 @@
         </sidenav-item>
       </li> -->
       <li class="mt-3 nav-item">
-        <h6 class="text-xs ps-4 text-uppercase font-weight-bolder opacity-6">
-          ACCOUNT PAGES
+        <h6 class="text-xm ps-4 text-uppercase font-weight-bolder opacity-6">
+          개인 페이지
         </h6>
       </li>
       <li class="nav-item">
         <sidenav-item
           url="/profile"
           :class="getRoute() === 'profile' ? 'active' : ''"
-          navText="Profile"
+          navText="프로필"
         >
           <template v-slot:icon>
-            <i class="mdi mdi-account text-lg text-success"></i>
+            <img src="../../assets/png/account.png" alt="프로필"/>
           </template>
         </sidenav-item>
       </li>
@@ -61,9 +59,9 @@
         <sidenav-item
           url="/signin"
           :class="getRoute() === 'signin' ? 'active' : ''"
-          navText="Sign In">
+          navText="로그인">
           <template v-slot:icon>
-            <i class="mdi mdi-login-variant text-lg text-success"></i>
+            <img src="../../assets/png/login-variant.png" alt="로그인"/>
           </template>
         </sidenav-item>
       </li>
@@ -71,9 +69,9 @@
         <sidenav-item
           url="/signup"
           :class="getRoute() === 'signup' ? 'active' : ''"
-          navText="Sign Up">
+          navText="회원가입">
           <template v-slot:icon>
-            <i class="mdi mdi-account-plus text-lg text-success"></i>
+            <img src="../../assets/png/account-plus.png" alt="회원가입">
           </template>
         </sidenav-item>
       </li>
@@ -106,3 +104,11 @@ export default {
   }
 };
 </script>
+
+<style>
+img {
+  width: 18px;
+  height: 18px;
+  align-self: center;
+}
+</style>
