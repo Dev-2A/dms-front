@@ -1,7 +1,7 @@
 <template>
     <div class="card mb-4">
         <div class="pb-0 card-header mb-0">
-            <h6>월별 누적 그래프</h6>
+            <h6 style="font-weight: bold; font-size: large;">월별 위험 행동 횟수 그래프</h6>
         </div>
         <div class="p-3 card-body">
             <div class="chart">
@@ -17,7 +17,7 @@ import Chart from "chart.js/auto";
 export default {
     name: "monthly-line-chart",
     mounted() {
-        var ctx = document.getElementById("monthly-line-chart").getContext("2d");
+        var ctx = document.getElementById("monthly-line").getContext("2d");
         new Chart(ctx, {
             type: "line",
             data: {
@@ -28,25 +28,27 @@ export default {
                         label: '졸음',
                         data: [0, 0, 0, 1, 3, 2,
                     0, 0, 3, 0, 3, 1],
-                        tension: 0.4,
-                        borderWidth: 0,
-                        pointRadius: 0,
+                        tension: 0.6,
+                        borderWidth: 3,
+                        pointRadius: 3,
                         borderColor: "#2F46BA"
                     },
                     {
                         label: '통화',
                         data: [6, 3, 5, 4, 4, 6,
                     4, 2, 15, 4, 18, 15],
-                        tension: 0.8,
+                        tension: 0.6,
                         borderWidth: 3,
+                        pointRadius: 3,
                         borderColor: "#722FBA",
                     },
                     {
                         label: '문자',
                         data: [8, 3, 11, 9, 7, 14,
                     3, 17, 13, 6, 12, 19],
-                        tension: 1.5,
-                        borderWidth: 8,
+                        tension: 0.6,
+                        borderWidth: 3,
+                        pointRadius: 3,
                         borderColor: "#BD0027",
                     },
                 ],
@@ -75,7 +77,7 @@ export default {
                         ticks: {
                             display: true,
                             padding: 10,
-                            color: "#fbfbfb",
+                            color: "#343a40",
                             font: {
                                 size: 13,
                                 family: "Open Sans",
@@ -94,7 +96,7 @@ export default {
                         },
                         ticks: {
                             display: true,
-                            color: "#ccc",
+                            color: "#343a40",
                             padding: 20,
                             font: {
                                 size: 13,
