@@ -26,19 +26,17 @@
           </template>
         </sidenav-item>
       </li>
-      <!-- <li class="navbar-item">
+      <li class="navbar-item">
         <sidenav-item
-          url="/gallery"
-          :class="getRoute() === 'gallery' ? 'active' : ''"
-          navText="Gallery"
+          url="/restarea"
+          :class="getRoute() === 'restarea' ? 'active' : ''"
+          navText="휴게소&졸음쉼터"
         >
           <template v-slot:icon>
-            <i
-              class="mdi mdi-panorama text-lg text-success"
-            ></i>
+            <img src="../../assets/png/coffee.png" alt="휴게소및졸음쉼터"/>
           </template>
         </sidenav-item>
-      </li> -->
+      </li>
       <li class="mt-3 nav-item">
         <h6 class="text-xm ps-4 text-uppercase font-weight-bolder opacity-6">
           개인 페이지
