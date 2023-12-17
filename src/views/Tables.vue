@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-8 col-12">
+      <div class="col-12">
         <projects-table/>
       </div>
     </div>
