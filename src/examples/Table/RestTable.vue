@@ -8,18 +8,18 @@
         <table class="table align-items-center mb-0">
           <thead>
             <tr>
-              <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-10">휴게소(주유소)명</th>
+              <th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-10">휴게소(주유소)명</th>
               <th
-                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-10 ps-2"
+                class="text-uppercase text-secondary text-xs font-weight-bolder opacity-10"
               >주소</th>
               <th
-                class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-10"
+                class="text-center text-uppercase text-secondary text-xs font-weight-bolder opacity-10"
               >쉼터 유무</th>
               <th
-                class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-10"
+                class="text-center text-uppercase text-secondary text-xs font-weight-bolder opacity-10"
               >편의시설</th>
               <th
-                class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-10"
+                class="text-center text-uppercase text-secondary text-xs font-weight-bolder opacity-10"
               >전화번호</th>
             </tr>
           </thead>
