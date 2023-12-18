@@ -73,6 +73,9 @@
           <div class="col-lg-8 col-12">
             <DefaultLineChart />
           </div>
+          <div class="col-lg-4 col-12">
+            <ThinBarChart/>
+          </div>
         </div>
         <!-- <div class="row mt-4">
           <div class="col-lg-7 mb-lg-0 mb-4">
@@ -97,6 +100,7 @@ import Card from "@/examples/Cards/Card.vue";
 import GradientLineChart from "@/examples/Charts/GradientLineChart.vue";
 import VideoCard from "@/examples/Cards/VideoCard.vue";
 import DefaultLineChart from "@/examples/Charts/DefaultLineChart.vue";
+import ThinBarChart from "@/examples/Charts/ThinBarChart.vue";
 
 import sleep from "@/assets/png/sleep.png";
 import cellphone from "@/assets/png/cellphone.png";
@@ -156,7 +160,8 @@ export default {
     // CategoriesCard,
     GradientLineChart,
     DefaultLineChart,
-    VideoCard
+    VideoCard,
+    ThinBarChart
 },
 };
 </script>
